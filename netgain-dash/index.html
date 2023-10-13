@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Gain Dashboard</title>
+
+    <!-- Links -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./static/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./static/css/owl.theme.green.min.css" />
+    <link rel="stylesheet" href="./static/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+
+  <body>
+    <!-- dashboard -->
+    <section class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <button class="side-close"><i class="far fa-times"></i></button>
+        <div class="logo">
+          <img src="./static/images/logo.png" alt="Net Gain" />
+        </div>
+        <div class="sidebar-links">
+          <ul class="allside-links">
+            <li>
+              <a href="#" class="link active"
+                ><i class="fas fa-tachometer-alt-slow"></i> Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="#" class="link"
+                ><i class="far fa-user-circle"></i> Profile</a
+              >
+            </li>
+            <li>
+              <a href="#" class="link"><i class="far fa-wallet"></i> Wallets</a>
+            </li>
+            <li class="dropdown side-drop">
+              <a
+                class="link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="far fa-wallet"></i> Transaction
+                <i class="far fa-chevron-right arrow"></i>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown side-drop">
+              <a
+                class="link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="far fa-wallet"></i> Transaction
+                <i class="far fa-chevron-right arrow"></i>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="link"
+                ><i class="far fa-user-circle"></i> Profile</a
+              >
+            </li>
+            <li>
+              <a href="#" class="link"><i class="far fa-wallet"></i> Wallets</a>
+            </li>
+            <li>
+              <a href="#" class="link"
+                ><i class="far fa-wallet"></i> Transaction</a
+              >
+            </li>
+            <li class="dropdown side-drop">
+              <a
+                class="link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="far fa-wallet"></i> Statics
+                <i class="far fa-chevron-right arrow"></i>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="link"
+                ><i class="far fa-wallet"></i> Accounts</a
+              >
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Navbar -->
+      <div class="db-body">
+        <div class="db-nav">
+          <div class="container-fluid px-lg-4">
+            <ul class="d-flex">
+              <li>
+                <div class="toggle-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </li>
+              <li class="account ms-auto">
+                <div class="dropdown">
+                  <a
+                    class="dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="far fa-user text-primary"></i> Accounts
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./signin.html">Sign In</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./signup.html">Sign Up</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- <div class="col-lg-6 col-md-6 col-sm-12 ms-auto">
+                <div class="icon-link">
+                  <div class="input-group">
+                    <input
+                      type="search"
+                      class="form-control"
+                      placeholder="Search"
+                      aria-label="Search"
+                      aria-describedby="search-btn"
+                    />
+                    <button class="search-btn" type="button" id="search-btn">
+                      <i class="far fa-search"></i>
+                    </button>
+                  </div>
+                  <a href="#"><i class="far fa-cog"></i></a>
+                  <a href="#"><i class="fas fa-bell"></i></a>
+                </div>
+              </div> -->
+            </ul>
+          </div>
+        </div>
+        <div class="db-content section">
+          <div class="container-fluid px-lg-4">
+            <h2 class="heading mb-5">Dashboard</h2>
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="card bg-primary copy-card">
+                  <div class="text">
+                    <h4>Referral Link</h4>
+                    <div class="row g-2">
+                      <div class="col-md-8 col-sm-12">
+                        <a href="#" class="link"> netgain.com</a>
+                      </div>
+                      <div class="col-md-2 col-sm-12">
+                        <button class="copy">copy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./static/images/copy-vector.png" alt="  " />
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="icon primary">
+                        <i class="far fa-layer-group"></i>
+                      </div>
+                    </div>
+                    <div class="col-9">
+                      <div class="text">
+                        <h5>0.0000 Daily BUSD</h5>
+                        <p>Earning</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="icon secondary">
+                        <i class="far fa-layer-group"></i>
+                      </div>
+                    </div>
+                    <div class="col-9">
+                      <div class="text">
+                        <h5>0.0000 Daily BUSD</h5>
+                        <p>Earning</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="icon tertiary">
+                        <i class="far fa-layer-group"></i>
+                      </div>
+                    </div>
+                    <div class="col-9">
+                      <div class="text">
+                        <h5>0.0000 Daily BUSD</h5>
+                        <p>Earning</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="icon four">
+                        <i class="far fa-layer-group"></i>
+                      </div>
+                    </div>
+                    <div class="col-9">
+                      <div class="text">
+                        <h5>0.0000 Daily BUSD</h5>
+                        <p>Earning</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="icon five">
+                        <i class="far fa-layer-group"></i>
+                      </div>
+                    </div>
+                    <div class="col-9">
+                      <div class="text">
+                        <h5>0.0000 Daily BUSD</h5>
+                        <p>Earning</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="icon six">
+                        <i class="far fa-layer-group"></i>
+                      </div>
+                    </div>
+                    <div class="col-9">
+                      <div class="text">
+                        <h5>0.0000 Daily BUSD</h5>
+                        <p>Earning</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./static/js/bootstrap.bundle.min.js"></script>
+    <script src="./static/js/owl.carousel.js"></script>
+    <script src="./static/js/owl.carousel.min.js"></script>
+    <script src="./static/js/app.js"></script>
+  </body>
+</html>

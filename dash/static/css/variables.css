@@ -1,0 +1,232 @@
+/* @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Sarabun:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Duployan:wght@400;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  /* Font Family */
+  --sans-serif: "Outfit", sans-serif;
+  --sans-serif-alt: "Noto Sans Duployan", sans-serif;
+
+  /* Colors */
+  --primary: #4169e1;
+  --light: #fff;
+  --light-alt: #f5f7ff;
+  --dark: #020a20;
+  --dark-alt: #11172a;
+  --border: #e6e9f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoohing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: var(--primary) transparent;
+  scrollbar-width: thin;
+}
+
+*::selection {
+  background: var(--primary);
+  color: var(--light);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--light-alt);
+  font-family: var(--sans-serif);
+  overflow-x: hidden;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+b,
+i,
+u,
+ul,
+ol,
+li,
+span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  line-height: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--dark-alt);
+  line-height: 160%;
+  letter-spacing: 0.3px;
+}
+
+p a {
+  color: var(--dark-alt);
+  transition: 0.5s ease all;
+}
+
+p a:hover {
+  color: var(--primary);
+}
+
+/* Background */
+.bg-primary {
+  background: var(--primary) !important;
+}
+.bg-secondary {
+  background: var(--secondary) !important;
+}
+.bg-tertiary {
+  background: var(--tertiary) !important;
+}
+.bg-light {
+  background: var(--light) !important;
+}
+.bg-light-alt {
+  background: var(--light-alt) !important;
+}
+.bg-dark {
+  background: var(--dark) !important;
+}
+.bg-dark-alt {
+  background: var(--dark-alt) !important;
+}
+
+/* Color */
+.text-primary {
+  color: var(--primary) !important;
+}
+.text-secondary {
+  color: var(--secondary) !important;
+}
+.text-tertiary {
+  color: var(--tertiary) !important;
+}
+.text-light {
+  color: var(--light) !important;
+}
+.text-light-alt {
+  color: var(--light-alt) !important;
+}
+.text-dark {
+  color: var(--dark) !important;
+}
+.text-dark-alt {
+  color: var(--dark-alt) !important;
+}
+
+/* Section */
+.section {
+  width: 100%;
+  padding: 40px 0;
+  position: relative;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1360px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1260px;
+  }
+}
+
+.heading {
+  display: inline-block;
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--light);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.heading span {
+  color: var(--primary);
+}
+
+.sub-heading {
+  font-size: 18px;
+  color: var(--dark-alt);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+
+.sub-heading span {
+  background: var(--primary);
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  margin: 0 15px;
+  border-radius: 1px;
+  box-shadow: 0 0 10px #020d20a8;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 18px;
+  color: var(--light);
+  background: var(--primary);
+  font-weight: 400;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  text-transform: capitalize;
+  position: relative;
+  transition: 0.5s all ease;
+}
+
+/* .button:hover {
+  background: var(--secondary);
+} */
