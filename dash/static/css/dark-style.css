@@ -139,20 +139,13 @@ p a:hover {
   position: absolute;
   top: 25px !important;
   right: -20px !important;
+  background: var(--dark-alt);
 }
-
-/* .header .top-nav .dropdown-menu::after {
-  content: "";
-  height: 40px;
-  width: 40px;
-  transform: rotate(45deg);
-  right: 0;
-  top: 0;
-  background: #2a27ec;
-} */
 
 .header .top-nav .dropdown-menu .dropdown-item {
   padding: 12px 18px;
+  font-size: 16px;
+  color: var(--light-alt);
   transition: 0.5s all ease;
 }
 

@@ -85,6 +85,7 @@
 
 .header .top-nav .dropdown-menu .dropdown-item {
   padding: 12px 18px;
+  font-size: 16px;
   transition: 0.5s all ease;
 }
 
