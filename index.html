@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Net Gain Dashboard</title>
+
+    <!-- Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+  </head>
+
+  <style>
+    :root {
+      /* Font Family */
+      --sans-serif: "Outfit", sans-serif;
+      --sans-serif-alt: "Noto Sans Duployan", sans-serif;
+
+      /* Colors */
+      --primary: #1a9ef7;
+      --secondary: #c434f0;
+      --light: #fff;
+      --light-alt: #fdf6ff;
+      --dark: #00090c;
+      --dark-alt: #031a22;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+      -webkit-font-smoohing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      scrollbar-color: var(--primary) transparent;
+      scrollbar-width: thin;
+    }
+
+    *::selection {
+      background: var(--primary);
+      color: var(--light);
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px;
+      background: var(--dark);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--primary);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--primary);
+      font-family: var(--sans-serif);
+    }
+
+    .section {
+      padding: 80px 50px;
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .section .container {
+      background: #fff;
+      padding: 80px 50px;
+      border-radius: 7px;
+      box-shadow: 0 0 20px #031a223d;
+    }
+
+    .section h5 a {
+      display: block;
+      font-size: 20px;
+      text-decoration: none;
+      color: var(--primary);
+      transition: 0.4s all ease;
+      margin-bottom: 15px;
+    }
+
+    .section h5 a:hover {
+      color: var(--secondary);
+    }
+  </style>
+
+  <body>
+    <!-- dashboard -->
+    <section class="section">
+      <div class="container">
+        <h5>
+          <a href="./netgain-dash/index.html"
+            >1. Dashbaord 1 (Net Gain Dashbaord)</a
+          >
+        </h5>
+        <h5><a href="./dash/index.html">2. Dashbaord 2 (Dash)</a></h5>
+      </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

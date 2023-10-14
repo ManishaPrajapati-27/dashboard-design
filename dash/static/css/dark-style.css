@@ -110,6 +110,11 @@ p a:hover {
   font-weight: 500;
 }
 
+.header .top-nav .top-nav-items button span {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 .header .top-nav .top-nav-items .dropdown .dropdown-toggle::after {
   display: none;
 }
@@ -174,9 +179,9 @@ p a:hover {
 }
 
 .header .navbar .navbar-nav .nav-link {
-  padding: 14px 20px;
+  padding: 12px 18px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--light-alt);
   border-radius: 7px;
   transition: 0.5s all ease;
@@ -320,7 +325,7 @@ p a:hover {
 }
 
 .db-content .card h2 {
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 5px;
   color: var(--light);
 }
@@ -449,4 +454,111 @@ p a:hover {
   .db-content .card .copy a {
     width: auto;
   }
+}
+
+/* Login Page */
+
+.login {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: url(../images/login-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.login.register {
+  background: url(../images/register-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.login.forgot {
+  background: url(../images/forgot-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.login::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4169e177;
+}
+
+.login .card {
+  background: transparent;
+  border: 0;
+  position: relative;
+  z-index: 5;
+}
+
+.login .card .text {
+  background: #4169e1b6;
+  padding: 35px;
+  text-align: center;
+}
+
+.login .card .form {
+  background: #ffffffb6;
+  padding: 35px;
+}
+
+.login .card .form .form-control {
+  background: var(--light);
+  border-radius: 7px !important;
+  box-shadow: 0 0 7px #4169e125;
+}
+
+.login .card .form .form-control:focus {
+  border-color: var(--primary);
+  box-shadow: none;
+}
+
+.login .card .form .input-group {
+  gap: 8px;
+}
+
+.login .card .form .input-group .input-group-text {
+  height: 40px;
+  width: 40px;
+  border-radius: 50% !important;
+  line-height: 40px;
+  background: var(--light);
+  color: var(--primary);
+  box-shadow: 0 0 7px #4169e125;
+}
+
+.form-check-input:checked {
+  background-color: #4169e1;
+  border-color: #4169e1;
+}
+
+.form-check-input:focus {
+  border-color: #4169e1;
+  box-shadow: 0 0 0 2px #4169e157;
+}
+
+.login .button {
+  padding: 8px 30px;
+  font-size: 16px;
+}
+
+.login p {
+  font-weight: 400;
+  color: var(--dark-alt);
+}
+
+.login p a {
+  color: var(--primary);
+  transition: 0.4s all ease;
+}
+
+.login p a:hover {
+  color: #2446ac;
 }
