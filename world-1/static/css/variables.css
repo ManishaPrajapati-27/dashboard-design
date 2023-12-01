@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  /* Font Family */
+  --sans-serif: "Poppins", sans-serif;
+  --serif: "Tinos", serif;
+
+  /* Colors */
+  --primary: #009ebe;
+  --secondary: #e4b546;
+  --light: #ffffff;
+  --light-alt: #eff4f8;
+  --dark: #010c1c;
+  --dark-alt: #232b38;
+
+  /* Shadows */
+  --shadow1: 0 0 20px 0 #92939b33;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoohing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: var(--primary) transparent;
+  scrollbar-width: thin;
+}
+
+*::selection {
+  background: var(--primary);
+  color: var(--light);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans-serif);
+  background: var(--light);
+  overflow-x: hidden;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+b,
+i,
+u,
+ul,
+ol,
+li,
+span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  line-height: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--dark-alt);
+  line-height: 160%;
+}
+
+p a {
+  color: var(--dark-alt);
+  transition: 0.5s ease all;
+}
+
+p a:hover {
+  color: var(--primary);
+}
+
+/* Background */
+.bg-primary {
+  background: var(--primary) !important;
+}
+.bg-secondary {
+  background: var(--secondary) !important;
+}
+.bg-light {
+  background: var(--light) !important;
+}
+.bg-light-alt {
+  background: var(--light-alt) !important;
+}
+.bg-dark {
+  background: var(--dark) !important;
+}
+.bg-dark-alt {
+  background: var(--dark-alt) !important;
+}
+
+/* Color */
+.text-primary {
+  color: var(--primary) !important;
+}
+.text-secondary {
+  color: var(--secondary) !important;
+}
+.text-light {
+  color: var(--light) !important;
+}
+.text-light-alt {
+  color: var(--light-alt) !important;
+}
+.text-dark {
+  color: var(--dark) !important;
+}
+.text-dark-alt {
+  color: var(--dark-alt) !important;
+}
+
+/* Section */
+.db-section {
+  width: 100%;
+  padding: 40px 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1360px;
+  }
+}
+
+.db-heading {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--dark);
+  font-family: var(--serif);
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background: var(--primary);
+  height: 4px;
+  width: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heading.heading-s::after {
+  left: 0;
+  transform: none;
+}
+
+.button {
+  display: block;
+  background: var(--primary);
+  font-size: 15px;
+  color: var(--light-alt);
+  font-weight: 400;
+  border: 0;
+  outline: 0;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s all ease;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #01172c, #004380);
+}
+
+.button span {
+  position: relative;
+  z-index: 4;
+}
+
+.button:hover {
+  color: var(--secondary);
+}
+
+.text-red {
+  color: #ff1d3b !important;
+}
+.text-green {
+  color: #02af19 !important;
+}
+.text-orange {
+  color: #ff4e08 !important;
+}
+
+.color1 {
+  background: #2e9aff4d !important;
+  color: #2e9aff !important;
+}
+.color2 {
+  background: #ac1dff34 !important;
+  color: #ac1dff !important;
+}
+.color3 {
+  background: #ff2e7436 !important;
+  color: #ff2e74 !important;
+}
+.color4 {
+  background: #1dffb44d !important;
+  color: #1dffb4 !important;
+}
+.color5 {
+  background: #ffca1e4d !important;
+  color: #ffcb1e !important;
+}
+.color6 {
+  background: #1e2dff4d !important;
+  color: #1e2dff !important;
+}
